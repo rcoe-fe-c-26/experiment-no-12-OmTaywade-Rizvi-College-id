@@ -7,6 +7,6 @@ num = int(input(""))
 with open ("story.txt", 'r') as f:
     content = f.read().split()
     wordList = [ i.lower() for i in content if(num == len(i))]
-    wordSet = set(wordList)
-    wordList2 = list(wordSet)
+    wordList2 = sorted(set(wordList))
     print(f"{wordList2}")
+
