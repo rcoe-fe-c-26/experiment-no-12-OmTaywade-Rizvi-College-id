@@ -3,11 +3,11 @@
 # five, etc.) found within the file.
 # Coder:Om Satish Taywade
 # Date:10/2/2026
-file = "story.txt"
 num = int(input("Enter Length of Words: "))
-with open (file, 'r') as f:
+with open ("story.txt", 'r') as f:
     content = f.read().split()
     wordList = [ i.lower() for i in content if(num == len(i))]
     wordSet = set(wordList)
     wordList = wordSet
     print(f"Following Unique words of length 8 present: {wordList}")
+
