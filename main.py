@@ -9,4 +9,5 @@ with open ("story.txt", 'r') as f:
     wordList = [ i.lower() for i in content if(num == len(i))]
     wordSet = set(wordList)
     wordList2 = list(wordSet)
-    print(f"Following Unique words of length 8 present: {wordList2}")
+    print(f"{wordList2}")
+
