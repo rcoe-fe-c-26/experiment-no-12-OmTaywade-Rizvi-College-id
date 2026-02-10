@@ -7,7 +7,7 @@ file = "story.txt"
 num = int(input("Enter Length of Words: "))
 with open (file, 'r') as f:
     content = f.read().split()
-    wordList = [ i for i in content if(num == len(i))]
+    wordList = [ i.lower() for i in content if(num == len(i))]
     wordSet = set(wordList)
     wordList = wordSet
     print(f"Following Unique words of length 8 present: {wordList}")
