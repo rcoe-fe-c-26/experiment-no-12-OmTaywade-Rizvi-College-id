@@ -10,5 +10,4 @@ with open (file, 'r') as f:
     wordList = [ i for i in content if(num == len(i))]
     wordSet = set(wordList)
     wordList = wordSet
-    print(wordList)
-
+    print(f"Following Unique words of length 8 present: {wordList}")
