@@ -10,5 +10,3 @@ with open ("story.txt", 'r') as f:
     wordSet = set(wordList)
     wordList2 = list(wordSet)
     print(f"{wordList2}")
-
-
