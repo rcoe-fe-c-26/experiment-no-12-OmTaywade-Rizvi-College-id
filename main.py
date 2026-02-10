@@ -3,7 +3,7 @@
 # five, etc.) found within the file.
 # Coder:Om Satish Taywade
 # Date:10/2/2026
-file = "temp.txt"
+file = "story.txt"
 num = int(input("Enter Length of Words: "))
 with open (file, 'r') as f:
     content = f.read().split()
@@ -11,3 +11,4 @@ with open (file, 'r') as f:
     wordSet = set(wordList)
     wordList = wordSet
     print(wordList)
+
